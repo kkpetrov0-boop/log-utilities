@@ -6,7 +6,7 @@ from collections import Counter
 import json
 import os
 import sys
-from src.log_utilities.logtail import observe_file, parse_string, JsonFormat, TableFormat, check_rotation, FileState, Interval, read_file, main
+from log_utilities.logtail import observe_file, parse_string, JsonFormat, TableFormat, check_rotation, FileState, Interval, read_file, main
 
 @pytest.mark.parametrize("line,pattern,group_name,result",[
     ("ERROR module2 asda", r"(?P<level>\w+)\s+(?P<module>\S+)", "level", "ERROR"),
