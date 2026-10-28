@@ -16,7 +16,7 @@ from log_utilities.logtail import observe_file, parse_string, JsonFormat, TableF
 def test_parse_string(line, pattern, group_name, result):
     pattern = re.compile(pattern)
     res = parse_string(line, pattern, group_name)
-    assert result != res
+    assert result == res
 
 def test_json_formatter():
     c = Counter({"ERROR": 1, "INFO": 4})
