@@ -1,3 +1,4 @@
+[![test](https://github.com/kkpetrov0-boop/log-utilities/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kkpetrov0-boop/log-utilities/actions/workflows/ci.yml)
 # log-utilities
  
 Набор утилит для управления логами через консольные команды.
