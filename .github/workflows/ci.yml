@@ -18,3 +18,8 @@ jobs:
           cache: "pip"
       - run: pip install -e ".[dev]"
       - run: pytest
+  docker-build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - run: docker build -t logtail:ci .
